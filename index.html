@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Love Zodiac</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+  <h1>💖 Love Meter💖</h1>
+
+  <div class="input-group">
+    <label>Nama Kamu</label>
+    <input type="text" id="name1" placeholder="Masukkan nama">
+  </div>
+
+  <div class="input-group">
+    <label>Tanggal Lahir Kamu</label>
+    <input type="date" id="birth1">
+  </div>
+
+  <div class="input-group">
+    <label>Nama Dia</label>
+    <input type="text" id="name2" placeholder="Masukkan nama">
+  </div>
+
+  <div class="input-group">
+    <label>Tanggal Lahir Dia</label>
+    <input type="date" id="birth2">
+  </div>
+
+  <button onclick="checkLove()">Cek Kecocokan 💘</button>
+
+  <div class="result" id="result">
+    <h2 id="couple"></h2>
+    <div class="percent" id="percent"></div>
+    <p id="desc"></p>
+    <div class="zodiac" id="zodiac"></div>
+  </div>
+
+  <button id="downloadBtn" style="display:none;" onclick="downloadResult()">
+    ✨ Unduh Hasil Cinta
+  </button>
+
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
